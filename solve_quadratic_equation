@@ -1,0 +1,19 @@
+import math
+def solve_quadratic_equation(a, b, c):
+    task = b*b - 4*a*c
+    sqrt_result = math.sqrt(abs(task))
+    x = []
+    if task > 0:
+        root_one = (-b - sqrt_result)/(2*a)
+        root_two = (-b + sqrt_result)/(2*a)
+        x.append(root_one)
+        x.append(root_two)
+    elif task == 0:
+        root = (-b / (2*a))
+        x.append(root)
+    else:
+        x = []
+    return x
+print(solve_quadratic_equation(1, -1, -2))   # [-1.0, 2.0]
+print(solve_quadratic_equation(1, -8, 16))   # [4.0]
+print(solve_quadratic_equation(1, 1, 1))     # []
