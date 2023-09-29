@@ -1,1 +1,1 @@
-"The artist is on a cosmic timetable just like all of nature."
+"The artist is on a cosmic timetable, just like all of nature."
